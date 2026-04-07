@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人简历</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background-color: #f4f7fb;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+    header {
+      background: #1f6feb;
+      color: #fff;
+      padding: 30px 40px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    header p {
+      margin: 8px 0 0;
+      font-size: 16px;
+    }
+    .section {
+      padding: 32px 40px;
+      border-bottom: 1px solid #eef2f7;
+    }
+    .section:last-child {
+      border-bottom: none;
+    }
+    .section h2 {
+      margin-top: 0;
+      font-size: 24px;
+      color: #1f1f1f;
+      border-left: 4px solid #1f6feb;
+      padding-left: 12px;
+    }
+    .info-list, .skills-list, .education-list, .experience-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .info-list li,
+    .skills-list li,
+    .education-list li,
+    .experience-list li {
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .skills-list li {
+      margin-right: 12px;
+      background: #eef7ff;
+      color: #1f6feb;
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+    .experience-item, .education-item {
+      margin-bottom: 20px;
+    }
+    .item-title {
+      font-size: 18px;
+      margin: 0 0 6px;
+      font-weight: bold;
+    }
+    .item-meta {
+      font-size: 14px;
+      color: #656d78;
+      margin-bottom: 8px;
+    }
+    .item-desc {
+      margin: 0;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>张三</h1>
+      <p>前端开发工程师 | Web 开发 | 用户体验优化</p>
+    </header>
+    <section class="section">
+      <h2>个人信息</h2>
+      <ul class="info-list">
+        <li>电话：138-0000-0000</li>
+        <li>邮箱：zhangsan@example.com</li>
+        <li>地址：北京市朝阳区</li>
+        <li>LinkedIn：linkedin.com/in/zhangsan</li>
+      </ul>
+    </section>
+    <section class="section">
+      <h2>技能</h2>
+      <ul class="skills-list">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Vue.js</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Git</li>
+      </ul>
+    </section>
+    <section class="section">
+      <h2>工作经历</h2>
+      <div class="experience-item">
+        <p class="item-title">前端开发工程师 | 某科技公司</p>
+        <p class="item-meta">2022.06 - 2024.03</p>
+        <p class="item-desc">负责公司 Web 平台前端架构设计与开发，参与项目需求分析、组件库搭建与性能优化，提升页面加载速度和用户体验。</p>
+      </div>
+      <div class="experience-item">
+        <p class="item-title">前端工程师 | 某互联网公司</p>
+        <p class="item-meta">2020.04 - 2022.05</p>
+        <p class="item-desc">参与电商平台前端开发，使用 Vue.js 和 React 开发多端页面，优化交互效果并完成移动端适配。</p>
+      </div>
+    </section>
+    <section class="section">
+      <h2>教育背景</h2>
+      <div class="education-item">
+        <p class="item-title">计算机科学与技术 本科 | 北京理工大学</p>
+        <p class="item-meta">2016.09 - 2020.06</p>
+        <p class="item-desc">主修计算机科学与技术，掌握数据结构、算法、操作系统和网络基础。</p>
+      </div>
+    </section>
+    <section class="section">
+      <h2>项目经验</h2>
+      <div class="experience-item">
+        <p class="item-title">在线教育平台</p>
+        <p class="item-meta">Vue.js / Node.js / 微信小程序</p>
+        <p class="item-desc">负责首页、课程页和个人中心模块开发，实现课程筛选、用户登录、课堂预约等功能，提升平台访问转化率。</p>
+      </div>
+      <div class="experience-item">
+        <p class="item-title">企业信息管理系统</p>
+        <p class="item-meta">React / Ant Design / REST API</p>
+        <p class="item-desc">参与企业后台管理系统建设，完成报表展示、权限管理和数据可视化模块，实现后台权限细分与数据统计。</p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
